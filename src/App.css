@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: rgb(85, 116, 116);
+}
+
+.container{
+  width: 1140px;
+  margin: 0px 20px;
+  margin: auto;
+
+}
+.header{
+  width: 100vw;
+  height: 70px;
+  line-height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(39, 39, 46);
+ 
+}
+
+.header h5{
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.country_bottom{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 2rem; 
+}
+
+.country_card{
+  width: 250px;
+  padding: 20px;
+  border-radius: 5px;
+  background: hsl(209,23%,22%);
+  color: #fff;
+
+}
+
+.country_img img{
+  width: 100%;
+  height: 150px;
+  border-radius: 5px 5px 0px 0px;
+  border-radius: 5px;
+
+}
+
+.country__wrapper{
+ margin-top: 100px;
+}
+
+.country_data{
+  padding: 20px;
+}
+
+.country_data h3{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.country_data h6{
+  margin-bottom: 10px;
+  font-weight: 400;
+  opacity: 80%;
+
+}
+.country_bottom{
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+}
+
+input{
+  padding: 7px 25px;
+  color: #fff;
+  border-radius: 5px;
+  background: hsl(209, 23%, 22%);
+  border: none;
+  outline: none;
+  margin-bottom: 50px;
+
+}
+
+::placeholder{
+  color: #fff;
+}
