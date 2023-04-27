@@ -39,19 +39,19 @@ In order to run this project locally, simply fork and clone the repository or do
 
 **Type the below in one terminal:**
 ```
-cd .\ConferenceManagement\frontend\  
+cd .\REST_COUNTRIES\frontend\ 
 npm i   
 npm start 
 ```
 
 **Type the below in other terminal:**
 ```
-cd .\ConferenceManagement\backend\    
+cd .\REST_COUNTRIES\backend\   
 npm i      
 npm run dev or node server.js   
 ```
 # Authors
 
-- Abhishek Prasad Teni
+- Abhishek Prasad Teni(teniabhishek@gmail.com)
 
 
