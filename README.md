@@ -44,6 +44,10 @@ In order to run this project locally, simply fork and clone the repository or do
 cd .\REST_COUNTRIES\frontend\ 
 npm i   
 npm start 
+
+for testing 
+
+npm test
 ```
 
 **Type the below in other terminal:**
