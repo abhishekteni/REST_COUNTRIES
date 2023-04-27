@@ -1,7 +1,7 @@
 const express = require('express')
 const axios = require('axios');
 const router  = express.Router()
-
+// get all countries
 router.get('/',async(req,res)=>{
     try {
         const response = await axios.get('https://restcountries.com/v3.1/all');
@@ -11,7 +11,7 @@ router.get('/',async(req,res)=>{
         res.status(500).send('Internal server error');
       }
 })
-
+// get country by name
 router.get('/countryname/:name',async(req,res)=>{
   const name = req.params.name;
   try {
@@ -23,7 +23,7 @@ router.get('/countryname/:name',async(req,res)=>{
   }
 })
 
-
+// get country by region
 router.get('/countryregion/:region',async(req,res)=>{
   const region = req.params.region;
   try {
