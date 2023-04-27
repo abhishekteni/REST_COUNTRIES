@@ -5,7 +5,7 @@ The objective was to create a React frontend that communicates with a
 NodeJS backend running Express. The goal is to create a frontend user interface that allows users to input any given country as a string and then have information about this country rendered back to the user. The information about the country will be fetched via your NodeJS
 backend which will send requests to the REST Countries API. The information received from this API should then be sent back to your React frontend using Express e.g. as a GET request
 response.
-I have achieved all the mentioned objectives including the Bonus objective. 
+I have achieved all the mentioned objectives including the Bonus objective, and hosted the app on netlify using render.com for the backend. 
 
 **Link to Repository:**\
 [Link] (https://github.com/abhishekteni/REST_COUNTRIES)
@@ -13,6 +13,8 @@ I have achieved all the mentioned objectives including the Bonus objective.
 **Netlify Link(Deployment):**\
 [Link] (https://polite-rabanadas-556bcc.netlify.app/)
 
+**render.com Link(Backend host):**\
+[Link] (https://restcountries-nqa2.onrender.com/api/countries)
 # Technologies used
 - React JS
 - Node
