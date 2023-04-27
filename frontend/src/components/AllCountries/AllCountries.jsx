@@ -67,7 +67,7 @@ const AllCountries = () => {
     },[])
   return (
     <div className="country__wrapper">
-    <h1>Home Page</h1>
+    <h1 className='home_title'>Home Page</h1>
     <div className='country_top'>
       <div className='search'>
           <SearchInput onSearch={getCountryByName}/>
@@ -81,7 +81,7 @@ const AllCountries = () => {
     {
       loading && !err && <MoonLoader
 
-      color="white"
+      color="#2b3945"
       loading={loading}
       cssOverride={override}
       size={150}

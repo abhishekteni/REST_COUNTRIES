@@ -10,7 +10,7 @@ const SearchInput = ({onSearch}) => {
     }
   return (
     <form onSubmit={submitHandler}>
-        <input type='text' placeholder='search a country...' value={input} onChange={(event)=>setInput(event.target.value)}/>
+        <input type='text' placeholder='search a country...' value={input} onChange={(event)=>setInput(event.target.value)} role='input'/>
     </form>
   )
 }

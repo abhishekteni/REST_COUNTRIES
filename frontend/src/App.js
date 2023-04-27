@@ -9,7 +9,9 @@ function App() {
     <div className="App">
     <header className='header'>
     <div className='container'>
-    <Link to="/"><h5>Hello there</h5></Link>
+    <Link to="/">
+      <h1>Bounce Insight</h1>
+      </Link>
         </div>
         </header>
         <div className='container'>

@@ -46,7 +46,7 @@ const Countryinfo = () => {
       {
         loading && !err && <MoonLoader
   
-        color="white"
+        color="#2b3945"
         loading={loading}
         cssOverride={override}
         size={150}
@@ -60,7 +60,7 @@ const Countryinfo = () => {
       }
       {
         country?.map((country,index)=>(
-          <div className='country_info_container' >
+          <div className='country_info_container' key={index} >
           
           <div className='country_info_img'>
           <img src={country.flags.png} alt=''/>
@@ -74,7 +74,30 @@ const Countryinfo = () => {
               <h5>Region: {country.region}</h5>
               <h5>Sub Region: {country.subRegion}</h5>
               <h5>Capital: {country.capital}</h5>
-
+              <h5>Currency:  {
+                (() => {
+                  let currencies = [];
+    
+                  for (let currency in country.currencies) {
+                    currencies.push(country.currencies[currency].name);
+                  }
+    
+                  return currencies.join(", ");
+                })()
+              }</h5> 
+              
+              <h5>languages:  {
+                (() => {
+                  let languages = [];
+    
+                  for (let language in country.languages) {
+                    languages.push(country.languages[language]);
+                  }
+    
+                  return languages.join(", ");
+                })()
+              }</h5>
+      
             </div>
           </div>  
 
