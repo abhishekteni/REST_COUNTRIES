@@ -23,7 +23,7 @@ const Countryinfo = () => {
     
   const getCountryByName= async()=>{
     try{
-        const res = await fetch(`/api/countries/countryname/${countryName}`)
+        const res = await fetch(`https://restcountries-nqa2.onrender.com/api/countries/countryname/${countryName}`)
         if(!res.ok) throw new Error('could not Found')
         const data = await res.json()
         setCountry(data)

@@ -17,7 +17,7 @@ const AllCountries = () => {
     const getAllCountries= async()=>{
 
       try{
-          const response=await fetch('/api/countries')
+          const response=await fetch('https://restcountries-nqa2.onrender.com/api/countries')
           if(!response.ok) throw new Error('Problem')
           const data = await response.json()
           console.log(data);
@@ -34,7 +34,7 @@ const AllCountries = () => {
     const getCountryByRegion=async(countryRegion)=>{
       console.log(countryRegion);
       try{
-        const response = await fetch(`/api/countries/countryregion/${countryRegion}`)
+        const response = await fetch(`https://restcountries-nqa2.onrender.com/api/countries/countryregion/${countryRegion}`)
         if(!response.ok) throw new Error('Unable to find') 
         const data = await response.json()
         setCountries(data)
@@ -48,7 +48,7 @@ const AllCountries = () => {
     const getCountryByName= async(countryName)=>{
       console.log(countryName)
       try{
-      const response = await fetch(`/api/countries/countryname/${countryName}`)
+      const response = await fetch(`https://restcountries-nqa2.onrender.com/api/countries/countryname/${countryName}`)
       if(!response.ok) throw new Error('Unable to find') 
         const data = await response.json()
         setCountries(data)

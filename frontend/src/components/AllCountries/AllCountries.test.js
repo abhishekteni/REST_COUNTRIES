@@ -14,7 +14,7 @@ describe('AllCountries component', () => {
     jest.restoreAllMocks();
   });
 
-  it('renders loading spinner when loading', async () => {
+  it('renders loading spinner loading', async () => {
     render(<AllCountries />);
     expect(screen.getByTestId('loader')).toBeInTheDocument();
   });
