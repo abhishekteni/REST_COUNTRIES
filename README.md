@@ -11,7 +11,7 @@ I have achieved all the mentioned objectives including the Bonus objective.
 [Link] (https://github.com/abhishekteni/REST_COUNTRIES)
 
 **Netlify Link(Deployment):**\
-[Link] (https://github.com/abhishekteni/REST_COUNTRIES)
+[Link] (https://polite-rabanadas-556bcc.netlify.app/)
 
 # Technologies used
 - React JS
